@@ -1,0 +1,234 @@
+.card{
+   background-color: blueviolet;
+  width: 140px;        
+  height: 60px;        
+  border-radius: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.basis:hover {
+    background-color: pink;
+    transition-duration: 2s;
+}
+.big:hover{
+    transform: scale(1.5);
+    transition-duration: 2s;
+}
+.spin:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+.spin{
+   display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.up{
+    background-color: blue;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 10px 150px;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.up:hover{
+     transform: translateY(-10px);
+     transition-duration: 1s;
+}
+.invi{
+    background-color: green;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin: 10px 0;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+@keyframes disappear {
+    from{ opacity: 1;}
+    to{opacity: 0;}
+}
+
+.invi:hover{
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.and:hover{
+     background-color: pink;
+    transition-duration: 2s;
+    transform: scale(1.5) rotate(10deg);
+}
+@keyframes s {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tona{
+    animation: s 2s linear infinite;
+}
+.card1 {
+  background-color: blueviolet;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 20px auto;
+  text-align: center;
+white-space: nowrap;
+}
+.card2 {
+  background-color: rgb(255, 0, 166);
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px; 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+    margin: 20px auto;
+  text-align: center;
+}
+
+@keyframes jump {
+     0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.jump{
+    animation: jump 1s linear infinite ;
+}
+.stop:hover{
+    animation-play-state: paused;
+}
+/* .layout { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+} */
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;               
+  } 
+}
+  @media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* ====== Quick fixes (paste at end of 04.css) ====== */
+
+/* center main container and limit width so grid centers on page */
+.book {
+  width: 100%;
+  max-width: 1100px;    /* ปรับตามต้องการ */
+  margin: 0 auto;       /* จัดกึ่งกลางเพจ */
+  padding: 28px 18px;
+  box-sizing: border-box;
+}
+
+/* ensure grid uses full card width and items stretch */
+.layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* make each .box3 full column width and remove stray margins */
+.box3 {
+  width: 100%;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+
+/* inner framed panel: remove large horizontal margins and center content */
+.box3 .in {
+  margin: 10px 0 !important;      /* ห้ามมี margin แนวนอนใหญ่ */
+  padding: 18px !important;
+  min-height: 120px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box;
+}
+
+/* remove problematic large horizontal margins from specific demo items */
+.up {
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+.invi {
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* center the demo elements inside the .in area */
+.card,
+.spin,
+.card1,
+.card2 {
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+/* sensible defaults for cards so they don't overflow columns */
+.card { 
+  width: auto !important;
+  height: auto !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  white-space: nowrap !important;
+}
+
+/* specific sizes */
+.card.big { width: 140px !important; height: 80px !important; }
+.card1 { width: 100px !important; height: 100px !important; border-radius: 50% !important; }
+.card2 { padding: 10px 22px !important; }
+
+/* responsive */
+@media (max-width: 1024px) {
+  .layout { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
+@media (max-width: 640px) {
+  .layout { grid-template-columns: 1fr; gap: 18px; }
+  .box1 { font-size: 24px; }
+}

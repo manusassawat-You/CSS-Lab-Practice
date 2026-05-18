@@ -1,0 +1,99 @@
+
+
+
+.red{
+    color: red;
+    margin: 10px;
+}
+.blue{
+    color: blue;
+    margin: 10px;
+}
+.green{
+    color: green;
+    margin: 10px;
+}
+.A{
+    font-size: 14px;
+    margin: 10px;
+}
+.B{
+    font-size: 20px;
+    margin: 10px;
+}
+.C{
+    font-size: 32px;
+    margin: 10px;
+}
+.bold{
+    font-weight: bold;
+    margin: 10px;
+}
+.italic{
+    font-style: italic;
+    margin: 10px;
+}
+.font{
+    font-weight: bold;
+    font-style: italic;
+    color: blueviolet;
+    margin: 10px;
+}
+.pink{
+    background-color: pink;
+    border-radius: 4px;
+    margin: 10px;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 4px;
+    margin: 10px;
+}
+.right {
+    background: linear-gradient(to right,palevioletred,rgb(251, 167, 181),rgb(248, 188, 198));
+    margin: 10px;
+    border-radius: 4px;
+}
+.under{
+    text-decoration: underline;
+    margin: 10px;
+    color: #333;
+}
+.center{
+    text-decoration: line-through;
+    margin: 10px;
+}
+.under-blue{
+    text-decoration: underline blue;
+    margin: 10px;
+}
+.HELLO{
+    color: blueviolet;
+    margin: 10px;
+}
+.hello{
+    margin: 10px;
+}
+.World{
+    color: pink;
+    margin: 10px;
+}
+.rainbow{
+    text-align: center;
+    font-size: 30px;
+}
+.shadow{
+    color: blueviolet;
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0, 4);
+}
+.shadowes{
+    color: palevioletred;
+    margin: 10px;
+    text-shadow: 
+    1px 1px 0 pink
+    3px 3px 0 black;
+    text-shadow: 2px 2px 5px rgba(0,0,0, 4);
+    
+
+}
