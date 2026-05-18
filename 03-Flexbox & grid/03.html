@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
   <head>
     <meta charset="utf-8" />
@@ -6,445 +6,452 @@
     <title>03 - Components Library</title>
 
     <!-- page stylesheet -->
+    <link rel="stylesheet" href="../all.css" />
     <link rel="stylesheet" href="03.css" />
   </head>
   <body>
-    <div class="page">
-      <div class="wrap">
-        <header class="page-header">
-          <h1 class="title">Components Library</h1>
-          <p class="subtitle">Collection of cards, grids and UI blocks</p>
-        </header>
+    <section class="book">
+      <nav>
+        <a href="../index.html" class="link">⭠กลับหน้าหลัก</a>
+      </nav>
 
-        <!-- Menu horizontal -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">➡️</span>
-              <span>เมนูแนวนอน</span>
-            </div>
+      <div class="page">
+        <div class="wrap">
+          <header class="page-header">
+            <h1 class="title">📐 Flexbox & Grid</h1>
+            <p class="subtitle">ลองทำตามภาพให้เหมือนกัน</p>
+          </header>
 
-            <div class="panel panel--padded">
-              <div class="pills">
-                <button class="pill pill--active">🏠 หน้าแรก</button>
-                <button class="pill">📄 เกี่ยวกับ</button>
-                <button class="pill">📩 ติดต่อ</button>
-                <div class="pills-fill"></div>
+          <!-- Menu horizontal -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">➡️</span>
+                <span>เมนูแนวนอน</span>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Center circle overlapping -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🎯</span>
-              <span>กล่องตรงกลาง</span>
-            </div>
-
-            <div class="panel">
-              <div class="center-box">
-                <div class="ring" aria-hidden="true"></div>
-                <div class="circle-outer">
-                  <div class="circle-inner">🎯</div>
+              <div class="panel panel--padded">
+                <div class="pills">
+                  <button class="pill pill--active">🏠 หน้าแรก</button>
+                  <button class="pill">📄 เกี่ยวกับ</button>
+                  <button class="pill">📩 ติดต่อ</button>
+                  <div class="pills-fill"></div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Spread equally -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">⚖️</span>
-              <span>กระจายเท่าๆ กัน</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="spread-row">
-                <div class="icon-square">◀</div>
-                <div class="icon-circle">○</div>
-                <div class="icon-square">▶</div>
+          <!-- Center circle overlapping -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🎯</span>
+                <span>กล่องตรงกลาง</span>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Grid 2 columns -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">📱</span>
-              <span>การ์ด 2 คอลัมน์</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="grid-2">
-                <div class="tile tile--icon">📱</div>
-                <div class="tile tile--icon">💻</div>
-                <div class="tile tile--icon">⌚</div>
-                <div class="tile tile--icon">🎧</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Grid 3 colored -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🎨</span>
-              <span>การ์ด 3 คอลัมน์</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="three-grid">
-                <div class="color-card red"><span class="dot"></span></div>
-                <div class="color-card blue"><span class="dot"></span></div>
-                <div class="color-card green"><span class="dot"></span></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Chips -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🏷</span>
-              <span>กล่องที่ขึ้นบรรทัดใหม่</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="chips">
-                <span class="chip">HTML</span>
-                <span class="chip">CSS</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">React</span>
-                <span class="chip">Python</span>
-                <span class="chip">Node.js</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Header-Content-Footer -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">📄</span>
-              <span>Header-Content-Footer</span>
-            </div>
-
-            <div class="panel">
-              <div class="hc">
-                <div class="hc-head">หัวข้อ</div>
-                <div class="hc-body">
-                  <p>เนื้อหา</p>
-                </div>
-                <div class="hc-foot">© 2025</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Gallery 4 col -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🖼</span>
-              <span>Gallery 4 คอลัมน์</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="gallery-4">
-                <div class="thumb">🖼</div>
-                <div class="thumb">🖼</div>
-                <div class="thumb">🖼</div>
-                <div class="thumb">🖼</div>
-                <div class="thumb">🖼</div>
-                <div class="thumb">🖼</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Sidebar + Content -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🎮</span>
-              <span>เมนู Sidebar + Content</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="sidebar-wrap">
-                <aside class="sidebar">
-                  <div class="side-item active">📊 Dashboard</div>
-                  <div class="side-item">👤 Profile</div>
-                  <div class="side-item">⚙️ Settings</div>
-                </aside>
-
-                <div class="main-content">
-                  <h3>เนื้อหาหลัก</h3>
-                  <p class="muted">พื้นที่แสดงเนื้อหา</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Grid uneven -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🧩</span>
-              <span>Grid แบบไม่เท่ากัน</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="uneven-grid">
-                <div class="big">📱 <span>Big</span></div>
-                <div class="small">💡</div>
-                <div class="small wide">🌈 <span>Wide Box</span></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Dashboard Cards -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">📊</span>
-              <span>Dashboard Cards</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="dash-row">
-                <div class="stat">
-                  <div class="stat-ico">👥</div>
-                  <div class="stat-title">Users</div>
-                  <div class="stat-value">1,234</div>
-                </div>
-
-                <div class="stat">
-                  <div class="stat-ico">💰</div>
-                  <div class="stat-title">Sales</div>
-                  <div class="stat-value">5,678</div>
-                </div>
-
-                <div class="stat">
-                  <div class="stat-ico">📈</div>
-                  <div class="stat-title">Growth</div>
-                  <div class="stat-value">+23%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Footer 3 col -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🏠</span>
-              <span>Footer 3 คอลัมน์</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="footer-3">
-                <div class="f-col">
-                  <div class="f-title">เกี่ยวกับเรา</div>
-                  <div class="muted">ข้อมูลบริษัท</div>
-                </div>
-                <div class="f-col">
-                  <div class="f-title">ลิงก์</div>
-                  <div class="muted">หน้าหลัก | บริการ</div>
-                </div>
-                <div class="f-col">
-                  <div class="f-title">ติดต่อ</div>
-                  <div class="muted">info@mail.com</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Video Card Grid -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🎬</span>
-              <span>Video Card Grid</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="video-grid">
-                <div class="video-card">
-                  <div class="thumb-image"></div>
-                  <div class="video-meta">
-                    <div class="v-title">Video 1</div>
-                    <div class="v-time muted">10:30</div>
-                  </div>
-                </div>
-                <div class="video-card">
-                  <div class="thumb-image"></div>
-                  <div class="video-meta">
-                    <div class="v-title">Video 2</div>
-                    <div class="v-time muted">15:45</div>
-                  </div>
-                </div>
-                <div class="video-card">
-                  <div class="thumb-image"></div>
-                  <div class="video-meta">
-                    <div class="v-title">Video 3</div>
-                    <div class="v-time muted">8:20</div>
+              <div class="panel">
+                <div class="center-box">
+                  <div class="ring" aria-hidden="true"></div>
+                  <div class="circle-outer">
+                    <div class="circle-inner">🎯</div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Product Card -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🧾</span>
-              <span>Product Card</span>
+          <!-- Spread equally -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">⚖️</span>
+                <span>กระจายเท่าๆ กัน</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="spread-row">
+                  <div class="icon-square">◀</div>
+                  <div class="icon-circle">○</div>
+                  <div class="icon-square">▶</div>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div class="panel panel--padded">
-              <div class="product-row">
-                <div class="product-card">
-                  <div class="product-img"></div>
-                  <div class="product-body">
-                    <div class="p-name">สินค้า A</div>
-                    <div class="p-price">฿299</div>
-                    <button class="btn">ซื้อเลย</button>
+          <!-- Grid 2 columns -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">📱</span>
+                <span>การ์ด 2 คอลัมน์</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="grid-2">
+                  <div class="tile tile--icon">📱</div>
+                  <div class="tile tile--icon">💻</div>
+                  <div class="tile tile--icon">⌚</div>
+                  <div class="tile tile--icon">🎧</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Grid 3 colored -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🎨</span>
+                <span>การ์ด 3 คอลัมน์</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="three-grid">
+                  <div class="color-card red"><span class="dot"></span></div>
+                  <div class="color-card blue"><span class="dot"></span></div>
+                  <div class="color-card green"><span class="dot"></span></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Chips -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🏷</span>
+                <span>กล่องที่ขึ้นบรรทัดใหม่</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="chips">
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">React</span>
+                  <span class="chip">Python</span>
+                  <span class="chip">Node.js</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Header-Content-Footer -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">📄</span>
+                <span>Header-Content-Footer</span>
+              </div>
+
+              <div class="panel">
+                <div class="hc">
+                  <div class="hc-head">หัวข้อ</div>
+                  <div class="hc-body">
+                    <p>เนื้อหา</p>
+                  </div>
+                  <div class="hc-foot">© 2025</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Gallery 4 col -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🖼</span>
+                <span>Gallery 4 คอลัมน์</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="gallery-4">
+                  <div class="thumb">🖼</div>
+                  <div class="thumb">🖼</div>
+                  <div class="thumb">🖼</div>
+                  <div class="thumb">🖼</div>
+                  <div class="thumb">🖼</div>
+                  <div class="thumb">🖼</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sidebar + Content -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🎮</span>
+                <span>เมนู Sidebar + Content</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="sidebar-wrap">
+                  <aside class="sidebar">
+                    <div class="side-item active">📊 Dashboard</div>
+                    <div class="side-item">👤 Profile</div>
+                    <div class="side-item">⚙️ Settings</div>
+                  </aside>
+
+                  <div class="main-content">
+                    <h3>เนื้อหาหลัก</h3>
+                    <p class="muted">พื้นที่แสดงเนื้อหา</p>
                   </div>
                 </div>
-
-                <div class="product-space muted">พื้นที่แสดงตัวอย่าง</div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Blog layout -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">📰</span>
-              <span>Blog Layout</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="blog-grid">
-                <div class="blog-main">
-                  <h4>บทความหลัก</h4>
-                  <p class="muted">เนื้อหาบทความที่น่าสนใจ...</p>
-                </div>
-                <aside class="blog-side">
-                  <h4>บทความยอดนิยม</h4>
-                  <div class="muted">บทความ 1</div>
-                  <div class="muted">บทความ 2</div>
-                </aside>
+          <!-- Grid uneven -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🧩</span>
+                <span>Grid แบบไม่เท่ากัน</span>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Masonry -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🎭</span>
-              <span>Masonry Grid</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="masonry">
-                <div class="m1">📷</div>
-                <div class="m2">🎨</div>
-                <div class="m3">🖼</div>
-                <div class="m4">📷</div>
-                <div class="m5">🎭</div>
-                <div class="m6">🖼</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Pricing table -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">🏆</span>
-              <span>Pricing Table</span>
-            </div>
-
-            <div class="panel panel--padded">
-              <div class="pricing-cards">
-                <div class="price">
-                  <div class="p-title">Free</div>
-                  <div class="p-amount">฿0</div>
-                  <div class="muted">เริ่มต้นใช้งาน</div>
-                </div>
-                <div class="price popular">
-                  <div class="p-title">Pro</div>
-                  <div class="p-amount">฿299</div>
-                  <div class="muted">แนะนำ!</div>
-                </div>
-                <div class="price">
-                  <div class="p-title">Enterprise</div>
-                  <div class="p-amount">฿999</div>
-                  <div class="muted">สำหรับทีม</div>
+              <div class="panel panel--padded">
+                <div class="uneven-grid">
+                  <div class="big">📱 <span>Big</span></div>
+                  <div class="small">💡</div>
+                  <div class="small wide">🌈 <span>Wide Box</span></div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- App store layout -->
-        <section class="card">
-          <div class="card-inner">
-            <div class="section-title">
-              <span class="section-ico">📱</span>
-              <span>App Store Layout</span>
+          <!-- Dashboard Cards -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">📊</span>
+                <span>Dashboard Cards</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="dash-row">
+                  <div class="stat">
+                    <div class="stat-ico">👥</div>
+                    <div class="stat-title">Users</div>
+                    <div class="stat-value">1,234</div>
+                  </div>
+
+                  <div class="stat">
+                    <div class="stat-ico">💰</div>
+                    <div class="stat-title">Sales</div>
+                    <div class="stat-value">5,678</div>
+                  </div>
+
+                  <div class="stat">
+                    <div class="stat-ico">📈</div>
+                    <div class="stat-title">Growth</div>
+                    <div class="stat-value">+23%</div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <div class="panel panel--padded">
-              <div class="app-list">
-                <div class="app-item">
-                  <div class="app-left">
-                    <div class="app-icon">📱</div>
-                    <div class="app-meta">
-                      <div class="app-name">App Name</div>
-                      <div class="muted">★★★★★</div>
+          <!-- Footer 3 col -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🏠</span>
+                <span>Footer 3 คอลัมน์</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="footer-3">
+                  <div class="f-col">
+                    <div class="f-title">เกี่ยวกับเรา</div>
+                    <div class="muted">ข้อมูลบริษัท</div>
+                  </div>
+                  <div class="f-col">
+                    <div class="f-title">ลิงก์</div>
+                    <div class="muted">หน้าหลัก | บริการ</div>
+                  </div>
+                  <div class="f-col">
+                    <div class="f-title">ติดต่อ</div>
+                    <div class="muted">info@mail.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Video Card Grid -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🎬</span>
+                <span>Video Card Grid</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="video-grid">
+                  <div class="video-card">
+                    <div class="thumb-image"></div>
+                    <div class="video-meta">
+                      <div class="v-title">Video 1</div>
+                      <div class="v-time muted">10:30</div>
                     </div>
                   </div>
-                  <button class="btn">ดาวน์โหลด</button>
-                </div>
-
-                <div class="app-item">
-                  <div class="app-left">
-                    <div class="app-icon">🎮</div>
-                    <div class="app-meta">
-                      <div class="app-name">Game Pro</div>
-                      <div class="muted">★★★★☆</div>
+                  <div class="video-card">
+                    <div class="thumb-image"></div>
+                    <div class="video-meta">
+                      <div class="v-title">Video 2</div>
+                      <div class="v-time muted">15:45</div>
                     </div>
                   </div>
-                  <button class="btn">ดาวน์โหลด</button>
+                  <div class="video-card">
+                    <div class="thumb-image"></div>
+                    <div class="video-meta">
+                      <div class="v-title">Video 3</div>
+                      <div class="v-time muted">8:20</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <!-- Product Card -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🧾</span>
+                <span>Product Card</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="product-row">
+                  <div class="product-card">
+                    <div class="product-img"></div>
+                    <div class="product-body">
+                      <div class="p-name">สินค้า A</div>
+                      <div class="p-price">฿299</div>
+                      <button class="btn">ซื้อเลย</button>
+                    </div>
+                  </div>
+
+                  <div class="product-space muted">พื้นที่แสดงตัวอย่าง</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Blog layout -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">📰</span>
+                <span>Blog Layout</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="blog-grid">
+                  <div class="blog-main">
+                    <h4>บทความหลัก</h4>
+                    <p class="muted">เนื้อหาบทความที่น่าสนใจ...</p>
+                  </div>
+                  <aside class="blog-side">
+                    <h4>บทความยอดนิยม</h4>
+                    <div class="muted">บทความ 1</div>
+                    <div class="muted">บทความ 2</div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Masonry -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🎭</span>
+                <span>Masonry Grid</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="masonry">
+                  <div class="m1">📷</div>
+                  <div class="m2">🎨</div>
+                  <div class="m3">🖼</div>
+                  <div class="m4">📷</div>
+                  <div class="m5">🎭</div>
+                  <div class="m6">🖼</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Pricing table -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">🏆</span>
+                <span>Pricing Table</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="pricing-cards">
+                  <div class="price">
+                    <div class="p-title">Free</div>
+                    <div class="p-amount">฿0</div>
+                    <div class="muted">เริ่มต้นใช้งาน</div>
+                  </div>
+                  <div class="price popular">
+                    <div class="p-title">Pro</div>
+                    <div class="p-amount">฿299</div>
+                    <div class="muted">แนะนำ!</div>
+                  </div>
+                  <div class="price">
+                    <div class="p-title">Enterprise</div>
+                    <div class="p-amount">฿999</div>
+                    <div class="muted">สำหรับทีม</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- App store layout -->
+          <section class="card">
+            <div class="card-inner">
+              <div class="section-title">
+                <span class="section-ico">📱</span>
+                <span>App Store Layout</span>
+              </div>
+
+              <div class="panel panel--padded">
+                <div class="app-list">
+                  <div class="app-item">
+                    <div class="app-left">
+                      <div class="app-icon">📱</div>
+                      <div class="app-meta">
+                        <div class="app-name">App Name</div>
+                        <div class="muted">★★★★★</div>
+                      </div>
+                    </div>
+                    <button class="btn">ดาวน์โหลด</button>
+                  </div>
+
+                  <div class="app-item">
+                    <div class="app-left">
+                      <div class="app-icon">🎮</div>
+                      <div class="app-meta">
+                        <div class="app-name">Game Pro</div>
+                        <div class="muted">★★★★☆</div>
+                      </div>
+                    </div>
+                    <button class="btn">ดาวน์โหลด</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
